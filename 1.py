@@ -21,7 +21,6 @@ def mayor_menor():
     entrada = input("introduzca numeros +/- separados por comas:")
     array = entrada.split(",")
     numeros = [int(x) for x in array]
-    print(max(numeros))
     print("el numero más grande: ", max(numeros))
     print("el numero más pequeño: ", min(numeros))
 
