@@ -18,8 +18,11 @@ El número más pequeño es -2.
 ¡Espero que disfrutes resolviendo este problema! Te ayudará a practicar tus habilidades en Python. """
 
 def mayor_menor():
-    numeros = input("introduzca numeros +/- separados por comas:")
-    print("el numero más grande: " + max(numeros))
-    print("el numero más pequeño: " + min(numeros))
+    entrada = input("introduzca numeros +/- separados por comas:")
+    array = entrada.split(",")
+    numeros = [int(x) for x in array]
+    print(max(numeros))
+    print("el numero más grande: ", max(numeros))
+    print("el numero más pequeño: ", min(numeros))
 
 mayor_menor()
