@@ -34,7 +34,6 @@ def factorial():
         total = 1
         for i in range(1,int(numero)+1):
             total = i * total
-            print(total)
 
         print(f"El factorial de {numero} es {total}")
 
