@@ -34,4 +34,6 @@ def calculadora_de_descuentos():
     resultado = int(precio) - int(descuento)
     print(f"Resumen:\nPrecio Original: ${precio}\nPorcentaje de Descuento: {porcentaje_descuento}%\nDescuento: ${descuento}\nPrecio con Descuento: ${resultado}")
 
+
+
 calculadora_de_descuentos()
