@@ -29,7 +29,15 @@ import pandas as pd
 df = pd.read_csv("./ventas.csv")
 
 """mostrar datos"""
-print(df)
+print(df.head())
 
 """largo de la data"""
 print(df.info())
+
+"""cantidad total de productos vendidos"""
+cantidad = df["Cantidad"]
+print("cantidad de productos vendidos: ", cantidad.sum())
+
+"""producto mas vendido"""
+producto_mas_vendido = df[["Producto", "Cantidad"]]
+print("producto mas vendido: \n", producto_mas_vendido.max())
