@@ -28,4 +28,8 @@ import pandas as pd
 
 df = pd.read_csv("./ventas.csv")
 
+"""mostrar datos"""
 print(df)
+
+"""largo de la data"""
+print(df.info())
