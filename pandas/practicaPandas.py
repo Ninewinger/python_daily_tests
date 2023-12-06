@@ -44,3 +44,5 @@ print("producto mas vendido: \n", producto_mas_vendido.max())
 
 """fecha con mayor venta"""
 fecha_mayor_venta = df[["Fecha", "Cantidad"]]
+
+"""grafico de linea de las ventas"""
