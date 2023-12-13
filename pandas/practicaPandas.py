@@ -25,6 +25,7 @@
 - Agrupa los datos por mes y calcula las ventas mensuales. """
 
 import pandas as pd
+import matplotlib.pyplot as plt
 
 df = pd.read_csv("./ventas.csv")
 
@@ -46,3 +47,6 @@ print("producto mas vendido: \n", producto_mas_vendido.max())
 fecha_mayor_venta = df[["Fecha", "Cantidad"]]
 
 """grafico de linea de las ventas"""
+plot = df.plot(kind='line', title='tendencia ventas', x='Fecha', y='Cantidad')
+
+plt.show()
