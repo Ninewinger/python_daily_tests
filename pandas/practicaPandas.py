@@ -47,6 +47,11 @@ print("producto mas vendido: \n", producto_mas_vendido.max())
 fecha_mayor_venta = df[["Fecha", "Cantidad"]]
 
 """grafico de linea de las ventas"""
-plot = df.plot(kind='line', title='tendencia ventas', x='Fecha', y='Cantidad')
+""" plot1 = df.plot(kind='line', title='tendencia ventas', x='Fecha', y='Cantidad') """
+
+""" plt.show() """
+
+"""grafico de barra de productos mas vendidos"""
+plot2 = df.plot(kind='hist', title="total de ventas", y='Total', index=["Producto_A", "Producto_B", "Producto_C"])
 
 plt.show()
